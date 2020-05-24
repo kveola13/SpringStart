@@ -9,4 +9,11 @@
         <property name="attack" value="2"/>
         <property name="health" value="1"/>
     </bean>
+
+    <bean id="unit2" class="com.kveola13.pojo.Unit">
+        <property name="uId" value="102"/>
+        <property name="name" value="Random Beast"/>
+        <property name="attack" value="2"/>
+        <property name="health" value="1"/>
+    </bean>
 </beans>

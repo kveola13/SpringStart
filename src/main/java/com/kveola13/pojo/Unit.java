@@ -6,6 +6,7 @@ public class Unit {
     int attack;
     int health;
 
+
     public Unit() {
     }
 
@@ -46,5 +47,15 @@ public class Unit {
 
     public void setHealth(int health) {
         this.health = health;
+    }
+
+    @Override
+    public String toString() {
+        return "Unit{" +
+                "uId=" + uId +
+                ", name='" + name + '\'' +
+                ", attack=" + attack +
+                ", health=" + health +
+                '}';
     }
 }
