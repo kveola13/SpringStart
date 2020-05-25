@@ -58,4 +58,12 @@ public class Unit {
                 ", health=" + health +
                 '}';
     }
+
+    public void init(){
+        System.out.println("Unit recruited!");
+    }
+
+    private void destroy() {
+        System.out.println("Unit sold!");
+    }
 }
