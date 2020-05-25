@@ -3,14 +3,13 @@ package com.kveola13;
 import com.kveola13.pojo.Unit;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.xml.XmlBeanFactory;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.Resource;
 
 public class Main {
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext("Unit.xml");
+        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("Unit.xml");
         Unit unit1 = (Unit) context.getBean("unit1");
         Unit unit2 = context.getBean("unit1", Unit.class);
 
@@ -22,5 +21,7 @@ public class Main {
         Unit unit4 = beanFactory.getBean("unit2", Unit.class);
 
         System.out.printf("unit3: %s, unit4: %s\n", unit3.toString(), unit4.toString());
+
+        context.close();
     }
 }
