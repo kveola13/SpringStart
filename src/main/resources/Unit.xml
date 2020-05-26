@@ -3,6 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean id="race" class="com.kveola13.pojo.Race">
+        <property name="name" value="Murloc"/>
+        <property name="UId" value="101"/>
+    </bean>
+
     <bean id="unit1" class="com.kveola13.pojo.Unit" init-method="init" destroy-method="destroy">
         <property name="uId" value="101"/>
         <property name="name" value="Random Murloc"/>

@@ -8,7 +8,7 @@ class UnitTest {
 
     @Test
     void testAttack() {
-        Unit unit = new Unit(1, "Murloc", 3, 1);
+        Unit unit = new Unit(1, "Murloc", 3, 1, new Race("Tauren", 101));
         assertEquals(3, unit.getAttack());
     }
 }
