@@ -18,6 +18,10 @@ public class Unit {
         this.race = race;
     }
 
+    public Unit(Race race) {
+        this.race = race;
+    }
+
     public int getuId() {
         return uId;
     }

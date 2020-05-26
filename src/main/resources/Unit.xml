@@ -13,6 +13,7 @@
         <property name="name" value="Random Murloc"/>
         <property name="attack" value="2"/>
         <property name="health" value="1"/>
+        <constructor-arg ref="race"/>
     </bean>
 
     <bean id="unit2" class="com.kveola13.pojo.Unit">
