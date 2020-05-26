@@ -5,16 +5,17 @@ public class Unit {
     String name;
     int attack;
     int health;
-
+    Race race;
 
     public Unit() {
     }
 
-    public Unit(int uId, String name, int attack, int health) {
+    public Unit(int uId, String name, int attack, int health, Race race) {
         this.uId = uId;
         this.name = name;
         this.attack = attack;
         this.health = health;
+        this.race = race;
     }
 
     public int getuId() {
@@ -49,6 +50,14 @@ public class Unit {
         this.health = health;
     }
 
+    public Race getRace() {
+        return race;
+    }
+
+    public void setRace(Race race) {
+        this.race = race;
+    }
+
     @Override
     public String toString() {
         return "Unit{" +
@@ -56,10 +65,11 @@ public class Unit {
                 ", name='" + name + '\'' +
                 ", attack=" + attack +
                 ", health=" + health +
+                ", race=" + race +
                 '}';
     }
 
-    public void init(){
+    public void init() {
         System.out.println("Unit recruited!");
     }
 
