@@ -1,5 +1,8 @@
 package com.kveola13.pojo;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Unit {
     int uId;
     String name;
