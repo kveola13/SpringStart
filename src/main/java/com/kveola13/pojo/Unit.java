@@ -78,6 +78,7 @@ public class Unit {
 
     public void init() {
         System.out.println("Unit recruited!");
+        race.init();
     }
 
     private void destroy() {

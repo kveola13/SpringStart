@@ -1,5 +1,8 @@
 package com.kveola13.pojo;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Race {
     String name;
     int UId;
@@ -34,5 +37,9 @@ public class Race {
                 "name='" + name + '\'' +
                 ", UId=" + UId +
                 '}';
+    }
+
+    public void init(){
+        System.out.println("Race added");
     }
 }
