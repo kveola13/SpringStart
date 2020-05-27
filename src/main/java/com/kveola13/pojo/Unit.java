@@ -1,5 +1,6 @@
 package com.kveola13.pojo;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -21,6 +22,7 @@ public class Unit {
         this.race = race;
     }
 
+    @Autowired
     public Unit(Race race) {
         this.race = race;
     }
