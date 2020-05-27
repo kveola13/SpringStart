@@ -39,7 +39,7 @@ public class Race {
                 '}';
     }
 
-    public void init(){
-        System.out.println("Race added");
+    public String init(){
+        return "Race added";
     }
 }
