@@ -78,12 +78,12 @@ public class Unit {
                 '}';
     }
 
-    public void init() {
-        System.out.println("Unit recruited!");
+    public String init() {
         race.init();
+        return "Unit recruited!";
     }
 
-    private void destroy() {
-        System.out.println("Unit sold!");
+    public String destroy() {
+        return "Unit sold!";
     }
 }
