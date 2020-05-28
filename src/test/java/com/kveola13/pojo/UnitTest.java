@@ -24,4 +24,16 @@ class UnitTest {
         Race race = new Race("random", 100);
         assertEquals("Race added", race.init());
     }
+
+    @Test
+    void testInitUnit(){
+        Unit unit = new Unit(1, "Murloc", 3, 1, new Race("Tauren", 101));
+        assertEquals("Unit recruited!", unit.init());
+    }
+
+    @Test
+    void testDestroyUnit(){
+        Unit unit = new Unit(1, "Murloc", 3, 1, new Race("Tauren", 101));
+        assertEquals("Unit sold!", unit.destroy());
+    }
 }
