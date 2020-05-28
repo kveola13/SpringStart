@@ -10,6 +10,6 @@ public class Application {
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(Application.class, args);
         Unit unit = context.getBean(Unit.class);
-        unit.init();
+        System.out.println(unit.init());
     }
 }
